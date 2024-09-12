@@ -14,13 +14,8 @@ body{
 
 header{
     background-color: var(--main-color);
-    background-image: url(./images/Component\ 30.png);
-    background-repeat: no-repeat;
-    background-position: right;
     color: var(--secondary-color);
     text-align: center;
-    display: flex;
-    align-items: center;
 }
 
 header h1{
@@ -39,16 +34,13 @@ header img{
 }
 
 .info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 20px;
     margin: 0 50px;
 }
 
 .about-me{
     color: var(--main-color);
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .about-me p{
@@ -60,7 +52,8 @@ header img{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    background-image: url(./images/Component\ 30.png);
+    background-color: var(--main-color);
+    max-width: 80%;
 }
 
 a{
@@ -93,9 +86,6 @@ a:hover{
     border: 1px solid var(--main-color);
     border-radius: 10px;
     background-color: var(--main-color);
-    background-image: url(./images/Component\ 30.png);
-    background-repeat: no-repeat;
-    background-position: right;
     padding: 20px;
     color: var(--secondary-color);
     display: flex;
@@ -133,9 +123,6 @@ h4{
 .studiesBox{
     padding: 10px;
     background-color: var(--main-color);
-    background-image: url(./images/Component\ 30.png);
-    background-repeat: no-repeat;
-    background-position: right;
     border-radius: 10px;
     color: var(--secondary-color);
     display: flex;
@@ -145,10 +132,9 @@ h4{
 }
 
 .skills-container{
-    display: flex;
-    justify-content: space-evenly;
     margin: 30px 50px;
     padding: 20px 0;
+    gap: 20px;
 }
 
 .skills-item{
@@ -158,9 +144,6 @@ h4{
 }
 
 #softSkillsBox, #skillsBox{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     gap: 20px;
     text-align: center;
     padding: 20px;
