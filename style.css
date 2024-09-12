@@ -7,35 +7,40 @@
     --shadow-color: rgb(158, 91, 156, 0.6);
 }
 
+
 body{
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 1fr auto;
 }
 
-header{
+.container-fluid{
+    --bs-gutter-x: 0;
+}
+
+.first{
     background-color: var(--main-color);
     color: var(--secondary-color);
     text-align: center;
+    margin: 0;
 }
 
-header h1{
+.first h1{
     font-size: 100px;
 }
 
-header h2{
+.first h2{
     font-size: 60px;
 }
 
-header img{
+.first img{
     width: 300px;
     height: 300px;
     border-radius: 10px;
-    margin: 50px;
+    margin: 20px;
 }
 
 .info{
     padding: 20px;
-    margin: 0 50px;
 }
 
 .about-me{
@@ -46,6 +51,7 @@ header img{
 .about-me p{
     font-size: 20px;
     text-align: center;
+    padding: 0 20px;
 }
 
 .links{
@@ -78,18 +84,15 @@ a:hover{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 10px 50px;
-    padding: 20px 0;
+    margin: 10px;
 }
 
 .jobBox{
     border: 1px solid var(--main-color);
     border-radius: 10px;
     background-color: var(--main-color);
-    padding: 20px;
     color: var(--secondary-color);
-    display: flex;
-    flex-direction: column;
+    padding: 20px;
     gap: 10px;
 }
 
@@ -111,13 +114,9 @@ h4{
 }
 
 #educationBox{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 50px;
-    gap: 30px;
     border-radius: 10px;
     padding-top: 20px;
+    margin: 10px;
 }
 
 .studiesBox{
@@ -125,14 +124,11 @@ h4{
     background-color: var(--main-color);
     border-radius: 10px;
     color: var(--secondary-color);
-    display: flex;
-    flex-direction: column;
     gap: 8px;
-    min-width: 500px;
+    margin-bottom: 20px;
 }
 
 .skills-container{
-    margin: 30px 50px;
     padding: 20px 0;
     gap: 20px;
 }
